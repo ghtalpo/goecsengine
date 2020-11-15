@@ -43,7 +43,6 @@ func (st *GameplayState) Update(world w.World) states.Transition {
 	DemoSystem(world)
 
 	if inpututil.IsKeyJustPressed(ebiten.KeyEscape) {
-		print("escape pressed?")
 		return states.Transition{Type: states.TransQuit}
 	}
 	return states.Transition{}

@@ -82,8 +82,6 @@ func (sm *StateMachine) Update(world w.World) {
 	// Run post-game systems
 	a.AnimationSystem(world)
 	s.TransformSystem(world)
-	// s.RenderSpriteSystem(world, screen)
-	// u.RenderUISystem(world, screen)
 
 	switch transition.Type {
 	case TransPop:
