@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 
-	c "github.com/ghtalpo/goecsengine/components"
-	"github.com/ghtalpo/goecsengine/loader"
-	w "github.com/ghtalpo/goecsengine/world"
+	c "github.com/x-hgg-x/goecsengine/components"
+	"github.com/x-hgg-x/goecsengine/loader"
+	w "github.com/x-hgg-x/goecsengine/world"
 
 	ecs "github.com/x-hgg-x/goecs/v2"
 )

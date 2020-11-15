@@ -1,8 +1,8 @@
 package spritesystem
 
 import (
-	c "github.com/ghtalpo/goecsengine/components"
-	w "github.com/ghtalpo/goecsengine/world"
+	c "github.com/x-hgg-x/goecsengine/components"
+	w "github.com/x-hgg-x/goecsengine/world"
 
 	ecs "github.com/x-hgg-x/goecs/v2"
 )

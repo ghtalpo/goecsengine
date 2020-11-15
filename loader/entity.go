@@ -5,9 +5,9 @@ import (
 	"image/color"
 	"reflect"
 
-	c "github.com/ghtalpo/goecsengine/components"
-	"github.com/ghtalpo/goecsengine/utils"
-	w "github.com/ghtalpo/goecsengine/world"
+	c "github.com/x-hgg-x/goecsengine/components"
+	"github.com/x-hgg-x/goecsengine/utils"
+	w "github.com/x-hgg-x/goecsengine/world"
 
 	"github.com/golang/freetype/truetype"
 	"github.com/hajimehoshi/ebiten/v2"

@@ -3,7 +3,7 @@ package resources
 import (
 	"io/ioutil"
 
-	"github.com/ghtalpo/goecsengine/utils"
+	"github.com/x-hgg-x/goecsengine/utils"
 
 	"github.com/golang/freetype/truetype"
 )

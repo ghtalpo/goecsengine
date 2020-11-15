@@ -1,4 +1,4 @@
-module github.com/ghtalpo/goecsengine
+module github.com/x-hgg-x/goecsengine
 
 go 1.14
 

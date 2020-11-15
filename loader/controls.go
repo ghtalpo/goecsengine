@@ -3,8 +3,8 @@ package loader
 import (
 	"fmt"
 
-	"github.com/ghtalpo/goecsengine/resources"
-	"github.com/ghtalpo/goecsengine/utils"
+	"github.com/x-hgg-x/goecsengine/resources"
+	"github.com/x-hgg-x/goecsengine/utils"
 
 	"github.com/pelletier/go-toml"
 )

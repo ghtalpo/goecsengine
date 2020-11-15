@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"math"
 
-	c "github.com/ghtalpo/goecsengine/components"
-	m "github.com/ghtalpo/goecsengine/math"
-	"github.com/ghtalpo/goecsengine/utils"
-	w "github.com/ghtalpo/goecsengine/world"
+	c "github.com/x-hgg-x/goecsengine/components"
+	m "github.com/x-hgg-x/goecsengine/math"
+	"github.com/x-hgg-x/goecsengine/utils"
+	w "github.com/x-hgg-x/goecsengine/world"
 
 	"github.com/hajimehoshi/ebiten/v2"
 	ecs "github.com/x-hgg-x/goecs/v2"

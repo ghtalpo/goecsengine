@@ -1,8 +1,8 @@
 package loader
 
 import (
-	c "github.com/ghtalpo/goecsengine/components"
-	"github.com/ghtalpo/goecsengine/utils"
+	c "github.com/x-hgg-x/goecsengine/components"
+	"github.com/x-hgg-x/goecsengine/utils"
 
 	"github.com/pelletier/go-toml"
 )

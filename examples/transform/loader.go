@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/ghtalpo/goecsengine/loader"
-	"github.com/ghtalpo/goecsengine/utils"
-	w "github.com/ghtalpo/goecsengine/world"
+	"github.com/x-hgg-x/goecsengine/loader"
+	"github.com/x-hgg-x/goecsengine/utils"
+	w "github.com/x-hgg-x/goecsengine/world"
 
 	"github.com/pelletier/go-toml"
 	ecs "github.com/x-hgg-x/goecs/v2"
