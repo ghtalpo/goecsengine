@@ -5,9 +5,9 @@ import (
 	"math"
 	"sort"
 
-	c "github.com/x-hgg-x/goecsengine/components"
-	m "github.com/x-hgg-x/goecsengine/math"
-	w "github.com/x-hgg-x/goecsengine/world"
+	c "github.com/ghtalpo/goecsengine/components"
+	m "github.com/ghtalpo/goecsengine/math"
+	w "github.com/ghtalpo/goecsengine/world"
 
 	"github.com/hajimehoshi/ebiten/v2"
 	ecs "github.com/x-hgg-x/goecs/v2"

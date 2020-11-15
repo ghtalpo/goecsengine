@@ -1,10 +1,10 @@
 package main
 
 import (
-	r "github.com/x-hgg-x/goecsengine/resources"
-	s "github.com/x-hgg-x/goecsengine/states"
-	"github.com/x-hgg-x/goecsengine/utils"
-	w "github.com/x-hgg-x/goecsengine/world"
+	r "github.com/ghtalpo/goecsengine/resources"
+	s "github.com/ghtalpo/goecsengine/states"
+	"github.com/ghtalpo/goecsengine/utils"
+	w "github.com/ghtalpo/goecsengine/world"
 
 	"github.com/hajimehoshi/ebiten/v2"
 )

@@ -1,8 +1,8 @@
 package world
 
 import (
-	c "github.com/x-hgg-x/goecsengine/components"
-	"github.com/x-hgg-x/goecsengine/resources"
+	c "github.com/ghtalpo/goecsengine/components"
+	"github.com/ghtalpo/goecsengine/resources"
 
 	ecs "github.com/x-hgg-x/goecs/v2"
 )

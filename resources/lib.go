@@ -1,7 +1,7 @@
 package resources
 
 import (
-	"github.com/x-hgg-x/goecsengine/components"
+	"github.com/ghtalpo/goecsengine/components"
 
 	"github.com/hajimehoshi/ebiten/v2/audio"
 )

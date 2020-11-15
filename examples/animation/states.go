@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/x-hgg-x/goecsengine/loader"
-	"github.com/x-hgg-x/goecsengine/states"
-	w "github.com/x-hgg-x/goecsengine/world"
+	"github.com/ghtalpo/goecsengine/loader"
+	"github.com/ghtalpo/goecsengine/states"
+	w "github.com/ghtalpo/goecsengine/world"
 
 	"github.com/hajimehoshi/ebiten/v2"
 	"github.com/hajimehoshi/ebiten/v2/inpututil"

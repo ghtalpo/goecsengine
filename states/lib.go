@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"os"
 
-	a "github.com/x-hgg-x/goecsengine/systems/animation"
-	i "github.com/x-hgg-x/goecsengine/systems/input"
-	s "github.com/x-hgg-x/goecsengine/systems/sprite"
-	u "github.com/x-hgg-x/goecsengine/systems/ui"
-	"github.com/x-hgg-x/goecsengine/utils"
-	w "github.com/x-hgg-x/goecsengine/world"
+	a "github.com/ghtalpo/goecsengine/systems/animation"
+	i "github.com/ghtalpo/goecsengine/systems/input"
+	s "github.com/ghtalpo/goecsengine/systems/sprite"
+	u "github.com/ghtalpo/goecsengine/systems/ui"
+	"github.com/ghtalpo/goecsengine/utils"
+	w "github.com/ghtalpo/goecsengine/world"
 
 	"github.com/hajimehoshi/ebiten/v2"
 )

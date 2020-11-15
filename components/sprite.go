@@ -3,8 +3,8 @@ package components
 import (
 	_ "image/png"
 
-	"github.com/x-hgg-x/goecsengine/math"
-	"github.com/x-hgg-x/goecsengine/utils"
+	"github.com/ghtalpo/goecsengine/math"
+	"github.com/ghtalpo/goecsengine/utils"
 
 	"github.com/hajimehoshi/ebiten/v2"
 	"github.com/hajimehoshi/ebiten/v2/ebitenutil"

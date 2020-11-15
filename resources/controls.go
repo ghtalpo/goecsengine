@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/x-hgg-x/goecsengine/utils"
+	"github.com/ghtalpo/goecsengine/utils"
 
 	"github.com/hajimehoshi/ebiten/v2"
 	"github.com/pelletier/go-toml"

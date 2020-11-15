@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"image/color"
 
-	"github.com/x-hgg-x/goecsengine/math"
+	"github.com/ghtalpo/goecsengine/math"
 
 	"golang.org/x/image/font"
 )
