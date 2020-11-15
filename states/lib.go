@@ -11,7 +11,7 @@ import (
 	"github.com/x-hgg-x/goecsengine/utils"
 	w "github.com/x-hgg-x/goecsengine/world"
 
-	"github.com/hajimehoshi/ebiten"
+	"github.com/hajimehoshi/ebiten/v2"
 )
 
 // TransType is a transition type
@@ -49,7 +49,9 @@ type State interface {
 	// Executed when the state become active again (states pushed over this one have been popped)
 	OnResume(world w.World)
 	// Executed on every frame when the state is active
-	Update(world w.World, screen *ebiten.Image) Transition
+	Update(world w.World) Transition
+	// Executed on (almost) every frame when the state is active
+	Draw(world w.World, screen *ebiten.Image)
 }
 
 // StateMachine contains a stack of states.
@@ -65,7 +67,7 @@ func Init(s State, world w.World) StateMachine {
 }
 
 // Update updates the state machine
-func (sm *StateMachine) Update(world w.World, screen *ebiten.Image) {
+func (sm *StateMachine) Update(world w.World) {
 	if len(sm.states) < 1 {
 		os.Exit(0)
 	}
@@ -75,13 +77,13 @@ func (sm *StateMachine) Update(world w.World, screen *ebiten.Image) {
 	u.UISystem(world)
 
 	// Run state update function with game systems
-	transition := sm.states[len(sm.states)-1].Update(world, screen)
+	transition := sm.states[len(sm.states)-1].Update(world)
 
 	// Run post-game systems
 	a.AnimationSystem(world)
 	s.TransformSystem(world)
-	s.RenderSpriteSystem(world, screen)
-	u.RenderUISystem(world, screen)
+	// s.RenderSpriteSystem(world, screen)
+	// u.RenderUISystem(world, screen)
 
 	switch transition.Type {
 	case TransPop:
@@ -95,6 +97,20 @@ func (sm *StateMachine) Update(world w.World, screen *ebiten.Image) {
 	case TransQuit:
 		sm._Quit(world)
 	}
+}
+
+// Draw draws the state machine
+func (sm *StateMachine) Draw(world w.World, screen *ebiten.Image) {
+	if len(sm.states) < 1 {
+		os.Exit(0)
+	}
+
+	// Run state update function with game systems
+	sm.states[len(sm.states)-1].Draw(world, screen)
+
+	// Run post-game systems
+	s.RenderSpriteSystem(world, screen)
+	u.RenderUISystem(world, screen)
 }
 
 // Remove the active state and resume the next state

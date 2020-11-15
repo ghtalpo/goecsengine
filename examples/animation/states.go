@@ -5,8 +5,8 @@ import (
 	"github.com/x-hgg-x/goecsengine/states"
 	w "github.com/x-hgg-x/goecsengine/world"
 
-	"github.com/hajimehoshi/ebiten"
-	"github.com/hajimehoshi/ebiten/inpututil"
+	"github.com/hajimehoshi/ebiten/v2"
+	"github.com/hajimehoshi/ebiten/v2/inpututil"
 )
 
 // GameplayState is the main game state
@@ -30,11 +30,15 @@ func (st *GameplayState) OnStop(world w.World) {
 }
 
 // Update method
-func (st *GameplayState) Update(world w.World, screen *ebiten.Image) states.Transition {
+func (st *GameplayState) Update(world w.World) states.Transition {
 	DemoSystem(world)
 
 	if inpututil.IsKeyJustPressed(ebiten.KeyEscape) {
 		return states.Transition{Type: states.TransQuit}
 	}
 	return states.Transition{}
+}
+
+// Draw method
+func (st *GameplayState) Draw(world w.World, screen *ebiten.Image) {
 }
